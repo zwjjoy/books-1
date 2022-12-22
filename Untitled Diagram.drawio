@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-21T23:55:28.472Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="z61oSJTuzebwHxn9J9OZ" version="20.3.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-22T09:59:35.630Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="EUL4UAa7l9GduvVJ_9Rg" version="20.3.6" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Main">
     <mxGraphModel dx="1422" dy="1874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -176,7 +176,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="18xm9mBscc4XQ-Tnb01c-10" value="Today&#39;s Race/Tip data" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="348" y="48" width="160" height="84" as="geometry">
+          <mxGeometry x="348" y="-10" width="160" height="142" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -186,6 +186,9 @@
         <mxCell id="18xm9mBscc4XQ-Tnb01c-12" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="18xm9mBscc4XQ-Tnb01c-10">
           <mxGeometry y="76" width="160" height="8" as="geometry" />
         </mxCell>
+        <mxCell id="icXEm4vAi2SMkkXStXrS-4" value="IsScratched = 0" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="18xm9mBscc4XQ-Tnb01c-10">
+          <mxGeometry y="84" width="160" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -194,44 +197,88 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="zm-09W-n29OTVn78ucoe-1" value="Today&#39;s Race/Tip data" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="48" width="160" height="248" as="geometry">
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-1" value="" style="swimlane;startSize=0;labelBackgroundColor=none;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="170" y="410" width="660" height="1904" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-2" value="Tipper Raceday" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#FF3333;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-1">
+          <mxGeometry x="30" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-3" value="Data Merge" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-1">
+          <mxGeometry x="190" y="570" width="160" height="170" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-4" value="Tipper Ratings.*&#xa;Raceday Query.*" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-3">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-5" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-3">
+          <mxGeometry y="70" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-6" value="group by:&#xa;VenueId&#xa;TipsterId&#xa;PriceIndex&#xa;Position&#xa;ExpertTipper&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-3">
+          <mxGeometry y="78" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-7" value="Selection &amp; Staking" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-1">
+          <mxGeometry x="190" y="960" width="160" height="900" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-8" value="MarketId&#xa;RunnerId&#xa;Date&#xa;StartDate&#xa;Day&#xa;Country&#xa;Venue&#xa;VenueId&#xa;State&#xa;RaceNo&#xa;HorseNo&#xa;HorseName&#xa;IsScratched&#xa;Result&#xa;Win&#xa;FixedPrice&#xa;Updated&#xa;PriceIndex&#xa;FixedPrice_Open&#xa;FixedPrice_11am&#xa;Stake_11am&#xa;Tipper&#xa;TipperId&#xa;Position&#xa;Expert&#xa;Tips&#xa;SR&#xa;ROI_BSP&#xa;BetUnits&#xa;Status&#xa;Version&#xa;MinsToJump&#xa;PriceUpdateToJump&#xa;FlagPriceUpdate&#xa;PriceIndex_Open&#xa;ExpertIndex&#xa;ROI_Min_Expert&#xa;Units_Expert&#xa;Tipper_Top&#xa;TipperId_Top&#xa;Tips_Top&#xa;Position_Top&#xa;SR_Top&#xa;ROI_BSP_Top&#xa;BetUnits_Top&#xa;ROI_Expert&#xa;MRank&#xa;MRank_Open&#xa;FavePrice&#xa;PriceIndex_Fave&#xa;FieldSize&#xa;BetType&#xa;ROI_Min&#xa;ROI_Max&#xa;BackBet&#xa;LayBet&#xa;Bet&#xa;Selection&#xa;SelectionTotal&#xa;Units&#xa;Final_Stake" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-7">
+          <mxGeometry y="26" width="160" height="864" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-9" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="jD8r5YBM3LVZ6AiH5WHl-7">
+          <mxGeometry y="890" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jD8r5YBM3LVZ6AiH5WHl-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#FF3333;" edge="1" parent="jD8r5YBM3LVZ6AiH5WHl-1" source="jD8r5YBM3LVZ6AiH5WHl-3" target="jD8r5YBM3LVZ6AiH5WHl-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF3333;" edge="1" parent="1" source="E46SsW7VQeXcnr3CG4mM-1" target="jD8r5YBM3LVZ6AiH5WHl-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-1" value="Tipper Ratings" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="550" width="160" height="230" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-2" value="VenueId&#xa;TipsterId&#xa;PriceIndex&#xa;Position&#xa;ExpertTipper&#xa;Tipper&#xa;lastTipped&#xa;coordinateTips&#xa;correctTips&#xa;SR&#xa;ROI_BSP&#xa;AWPR_BSP&#xa;RankDate" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="E46SsW7VQeXcnr3CG4mM-1">
+          <mxGeometry y="26" width="160" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="E46SsW7VQeXcnr3CG4mM-1">
+          <mxGeometry y="220" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF3333;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="E46SsW7VQeXcnr3CG4mM-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-4" value="Raceday Query" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="440" width="160" height="434" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zm-09W-n29OTVn78ucoe-2" value="MarketId&#xa;RunnerId&#xa;Date&#xa;Venue&#xa;VenueId&#xa;State&#xa;Metro&#xa;RaceNo&#xa;HorseNo&#xa;HorseName&#xa;FixedPrice&#xa;IsScratched&#xa;DaysSinceLastRace&#xa;Distance&#xa;rn" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zm-09W-n29OTVn78ucoe-1">
-          <mxGeometry y="26" width="160" height="214" as="geometry" />
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-5" value="Venue&#xa;RaceNo&#xa;HorseNo&#xa;HorseName&#xa;StartDate&#xa;Updated&#xa;MarketId&#xa;RunnerId&#xa;FixedPrice_11am&#xa;Stake_11am&#xa;Date&#xa;Day&#xa;State&#xa;Country&#xa;VenueId&#xa;Result&#xa;Win&#xa;FixedPrice_Open&#xa;FixedPrice&#xa;priceNumber&#xa;IsScratched&#xa;TipsterId&#xa;Source&#xa;Tipster&#xa;PriceIndex&#xa;Position&#xa;ExpertTipper&#xa;Units" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="E46SsW7VQeXcnr3CG4mM-4">
+          <mxGeometry y="26" width="160" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="zm-09W-n29OTVn78ucoe-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="zm-09W-n29OTVn78ucoe-1">
-          <mxGeometry y="240" width="160" height="8" as="geometry" />
+        <mxCell id="E46SsW7VQeXcnr3CG4mM-6" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="E46SsW7VQeXcnr3CG4mM-4">
+          <mxGeometry y="426" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="CXhd-_XN48TOqSjr1riN-1" value="Tipper Ratings" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="42" width="160" height="254" as="geometry">
-            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="eqTrRZG1gB9bNwaIUVVo" name="Tipper_Modelling">
+    <mxGraphModel dx="1422" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HJZ-xLwV050UmvbmPUzY-1" value="Staking Table" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="430" width="160" height="310" as="geometry">
+            <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CXhd-_XN48TOqSjr1riN-2" value="VenueId&#xa;TipsterId&#xa;PriceIndex&#xa;Position&#xa;ExpertTipper&#xa;Tipper&#xa;lastTipped&#xa;coordinateTips&#xa;correctTips&#xa;SR&#xa;ROI_BSP&#xa;AWPR_BSP&#xa;RankDate" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CXhd-_XN48TOqSjr1riN-1">
-          <mxGeometry y="26" width="160" height="194" as="geometry" />
+        <mxCell id="HJZ-xLwV050UmvbmPUzY-2" value="Country&#xa;BetType&#xa;PriceIndex_Fave&#xa;PriceIndex_Open&#xa;PriceIndex&#xa;MRank&#xa;Position&#xa;SelectionTotal&#xa;Tips&#xa;SR&#xa;Profit&#xa;ROI_FP&#xa;ROI_BSP&#xa;ROI_Min&#xa;ROI_Max&#xa;AWPR_FP&#xa;AWPR_BSP&#xa;Units&#xa;TestDays" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HJZ-xLwV050UmvbmPUzY-1">
+          <mxGeometry y="26" width="160" height="274" as="geometry" />
         </mxCell>
-        <mxCell id="CXhd-_XN48TOqSjr1riN-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="CXhd-_XN48TOqSjr1riN-1">
-          <mxGeometry y="220" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="CXhd-_XN48TOqSjr1riN-4" value="PH" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="CXhd-_XN48TOqSjr1riN-1">
-          <mxGeometry y="228" width="160" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="megriRmepzH86j4lbP0q-1" value="Selection &amp; Staking" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="400" width="160" height="924" as="geometry">
-            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="megriRmepzH86j4lbP0q-2" value="MarketId&#xa;RunnerId&#xa;Date&#xa;StartDate&#xa;Day&#xa;Country&#xa;Venue&#xa;VenueId&#xa;State&#xa;RaceNo&#xa;HorseNo&#xa;HorseName&#xa;IsScratched&#xa;Result&#xa;Win&#xa;FixedPrice&#xa;Updated&#xa;PriceIndex&#xa;FixedPrice_Open&#xa;FixedPrice_11am&#xa;Stake_11am&#xa;Tipper&#xa;TipperId&#xa;Position&#xa;Expert&#xa;Tips&#xa;SR&#xa;ROI_BSP&#xa;BetUnits&#xa;Status&#xa;Version&#xa;MinsToJump&#xa;PriceUpdateToJump&#xa;FlagPriceUpdate&#xa;PriceIndex_Open&#xa;ExpertIndex&#xa;ROI_Min_Expert&#xa;Units_Expert&#xa;Tipper_Top&#xa;TipperId_Top&#xa;Tips_Top&#xa;Position_Top&#xa;SR_Top&#xa;ROI_BSP_Top&#xa;BetUnits_Top&#xa;ROI_Expert&#xa;MRank&#xa;MRank_Open&#xa;FavePrice&#xa;PriceIndex_Fave&#xa;FieldSize&#xa;BetType&#xa;ROI_Min&#xa;ROI_Max&#xa;BackBet&#xa;LayBet&#xa;Bet&#xa;Selection&#xa;SelectionTotal&#xa;Units&#xa;Final_Stake" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="megriRmepzH86j4lbP0q-1">
-          <mxGeometry y="26" width="160" height="864" as="geometry" />
-        </mxCell>
-        <mxCell id="megriRmepzH86j4lbP0q-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="megriRmepzH86j4lbP0q-1">
-          <mxGeometry y="890" width="160" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="megriRmepzH86j4lbP0q-4" value="PH" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="megriRmepzH86j4lbP0q-1">
-          <mxGeometry y="898" width="160" height="26" as="geometry" />
+        <mxCell id="HJZ-xLwV050UmvbmPUzY-3" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="HJZ-xLwV050UmvbmPUzY-1">
+          <mxGeometry y="300" width="160" height="8" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
